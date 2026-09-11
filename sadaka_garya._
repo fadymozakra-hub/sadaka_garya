@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1220" />
+  <meta name="description" content="صدقة جارية على روح كامل شفيق ومريم عزيز ووحيد كامل — صفحة دعاء وذكر وسبحة إلكترونية." />
+  <title>صدقة جارية | كامل شفيق • مريم عزيز • وحيد كامل</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #07111f;
+  --bg-2: #0a1729;
+  --panel: rgba(13, 29, 49, 0.78);
+  --panel-strong: rgba(13, 31, 52, 0.95);
+  --line: rgba(255, 255, 255, 0.09);
+  --text: #f7f8fb;
+  --muted: #b5c0cf;
+  --gold: #e7bd68;
+  --gold-2: #f2d896;
+  --green: #6fd1a8;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+  --radius: 28px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Cairo", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% 15%, rgba(77, 144, 201, 0.11), transparent 32%),
+    radial-gradient(circle at 85% 20%, rgba(231, 189, 104, 0.10), transparent 26%),
+    linear-gradient(145deg, var(--bg) 0%, var(--bg-2) 55%, #06101c 100%);
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at top, rgba(255,255,255,0.04), transparent 28%),
+    linear-gradient(transparent 96%, rgba(255,255,255,0.025) 100%);
+  pointer-events: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.grid-overlay {
+  position: fixed;
+  inset: 0;
+  opacity: 0.17;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: linear-gradient(to bottom, black, transparent 78%);
+  pointer-events: none;
+}
+
+.bg-orb {
+  position: fixed;
+  width: 260px;
+  height: 260px;
+  border-radius: 999px;
+  filter: blur(70px);
+  opacity: 0.24;
+  pointer-events: none;
+}
+
+.orb-1 {
+  top: 18%;
+  left: -120px;
+  background: #2f7aa6;
+}
+
+.orb-2 {
+  right: -130px;
+  bottom: 10%;
+  background: #c29335;
+}
+
+.topbar {
+  padding: 24px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(231,189,104,0.38);
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-2);
+  background: rgba(231,189,104,0.08);
+}
+
+.topbar-chip {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.03);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 12px;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 12px 70px;
+}
+
+.hero-badge,
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gold-2);
+  background: rgba(231,189,104,0.08);
+  border: 1px solid rgba(231,189,104,0.18);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.hero h1 {
+  margin-top: 22px;
+  font-size: clamp(34px, 5vw, 64px);
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.hero-subtitle {
+  margin-top: 14px;
+  color: var(--gold-2);
+  font-size: clamp(18px, 2.4vw, 28px);
+  font-weight: 700;
+}
+
+.hero-subtitle i {
+  color: rgba(255,255,255,0.30);
+  font-style: normal;
+  padding: 0 8px;
+}
+
+.hero-dua {
+  width: min(830px, 100%);
+  margin: 22px auto 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 2;
+}
+
+.scroll-cta {
+  margin-top: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #0d1624;
+  background: linear-gradient(135deg, var(--gold-2), var(--gold));
+  border-radius: 999px;
+  padding: 13px 20px;
+  font-weight: 800;
+  box-shadow: 0 10px 35px rgba(231,189,104,0.16);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.scroll-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(231,189,104,0.24);
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-heading h2 {
+  margin-top: 12px;
+  font-size: clamp(25px, 3.5vw, 40px);
+  line-height: 1.3;
+}
+
+.names-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.name-card,
+.verse-card,
+.hadith-card,
+.dua-item,
+.tasbeeh-card {
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(17,35,58,0.88), rgba(9,24,41,0.78));
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.name-card {
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.name-card::before {
+  content: "";
+  position: absolute;
+  inset: auto -40px -90px auto;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: rgba(231,189,104,0.08);
+  filter: blur(6px);
+}
+
+.name-card.featured {
+  border-color: rgba(231,189,104,0.28);
+  transform: translateY(-7px);
+}
+
+.name-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(231,189,104,0.18), rgba(111,209,168,0.08));
+  border: 1px solid rgba(231,189,104,0.18);
+  color: var(--gold-2);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.name-card h3 {
+  margin-top: 18px;
+  font-size: 23px;
+}
+
+.name-card p {
+  margin-top: 9px;
+  color: var(--muted);
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+.verse-card {
+  border-radius: 24px;
+  padding: 28px 25px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.verse-symbol {
+  color: var(--gold);
+  font-size: 26px;
+}
+
+blockquote p {
+  font-family: "Amiri", serif;
+  font-size: clamp(23px, 3.2vw, 35px);
+  line-height: 1.95;
+  color: #fffaf0;
+}
+
+.reference {
+  margin-top: 13px;
+  color: var(--gold);
+  font-size: 13px;
+}
+
+.hadith-card {
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.hadith-icon {
+  flex: 0 0 auto;
+  width: 54px;
+  height: 54px;
+  border-radius: 17px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(111,209,168,0.18);
+  background: rgba(111,209,168,0.08);
+  color: var(--green);
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.hadith-text {
+  font-family: "Amiri", serif;
+  font-size: clamp(20px, 2.7vw, 28px);
+  line-height: 1.9;
+}
+
+.hadith-source {
+  margin-top: 8px;
+  color: var(--gold);
+  font-size: 13px;
+}
+
+.tasbeeh-card {
+  width: min(780px, 100%);
+  margin: 0 auto;
+  border-radius: 34px;
+  padding: 28px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.tasbeeh-card::after {
+  content: "";
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  left: 50%;
+  top: 27%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(231,189,104,0.09), transparent 66%);
+  pointer-events: none;
+}
+
+.tasbeeh-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.tasbeeh-top > div:first-child {
+  text-align: right;
+}
+
+.small-label,
+.target-wrap label,
+.remaining-label {
+  display: block;
+  color: #8e9aac;
+  font-size: 12px;
+}
+
+.dhikr-text {
+  margin-top: 5px;
+  color: var(--gold-2);
+  font-family: "Amiri", serif;
+  font-size: 30px;
+}
+
+.target-wrap {
+  text-align: left;
+}
+
+.target-wrap select {
+  margin-top: 6px;
+  background: rgba(255,255,255,0.045);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: #fff;
+  padding: 8px 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+.counter-ring {
+  width: min(300px, 72vw);
+  aspect-ratio: 1;
+  margin: 34px auto 24px;
+  border-radius: 50%;
+  padding: 13px;
+  display: grid;
+  place-items: center;
+  background: conic-gradient(var(--gold) 0deg, rgba(255,255,255,0.07) 0deg);
+  transition: background .25s ease, transform .15s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.ring-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  background:
+    radial-gradient(circle at 50% 35%, rgba(255,255,255,0.06), transparent 50%),
+    #09192a;
+  border: 1px solid rgba(255,255,255,0.07);
+  box-shadow: inset 0 10px 35px rgba(0,0,0,0.24);
+}
+
+#count {
+  font-size: clamp(65px, 13vw, 100px);
+  line-height: 0.9;
+  margin: 9px 0 5px;
+  letter-spacing: -2px;
+}
+
+.tasbeeh-button {
+  position: relative;
+  z-index: 2;
+  border: 0;
+  background: transparent;
+  width: min(420px, 100%);
+  padding: 0;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.button-glow {
+  display: block;
+  position: absolute;
+  inset: -8px;
+  border-radius: 22px;
+  background: radial-gradient(circle, rgba(231,189,104,.25), transparent 67%);
+  filter: blur(13px);
+  opacity: .65;
+}
+
+.button-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 17px 20px;
+  color: #111925;
+  background: linear-gradient(135deg, var(--gold-2), var(--gold));
+  font-weight: 800;
+  font-size: 16px;
+  box-shadow: 0 17px 50px rgba(231,189,104,0.17);
+  transition: transform .12s ease, filter .2s ease;
+}
+
+.tasbeeh-button:hover .button-inner {
+  filter: brightness(1.03);
+}
+
+.tasbeeh-button:active .button-inner {
+  transform: scale(.98);
+}
+
+.finger {
+  font-size: 21px;
+}
+
+.tasbeeh-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.secondary-btn {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.04);
+  color: var(--muted);
+  border-radius: 14px;
+  padding: 9px 14px;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+
+.secondary-btn:hover {
+  background: rgba(255,255,255,0.07);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.completion-message {
+  margin-top: 18px;
+  border: 1px solid rgba(111,209,168,0.18);
+  background: rgba(111,209,168,0.06);
+  color: #ccefe0;
+  border-radius: 16px;
+  padding: 13px 15px;
+  font-size: 13px;
+  position: relative;
+  z-index: 2;
+}
+
+.completion-message span {
+  color: #e7bd68;
+  padding-left: 5px;
+}
+
+.dua-list {
+  display: grid;
+  gap: 14px;
+}
+
+.dua-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 19px 20px;
+  border-radius: 20px;
+}
+
+.dua-number {
+  color: var(--gold);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding-top: 3px;
+}
+
+.dua-item p {
+  color: var(--muted);
+  line-height: 1.95;
+  font-size: 14px;
+}
+
+footer {
+  padding: 48px 0 60px;
+  text-align: center;
+}
+
+.footer-line {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to left, transparent, rgba(231,189,104,0.35), transparent);
+  margin-bottom: 25px;
+}
+
+footer p {
+  color: var(--gold-2);
+  font-family: "Amiri", serif;
+  font-size: 23px;
+}
+
+footer span {
+  display: block;
+  margin-top: 10px;
+  color: #8995a7;
+  font-size: 12px;
+}
+
+.pulse {
+  animation: pulse .35s ease;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  45% { transform: scale(.985); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 800px) {
+  .topbar {
+    padding-top: 18px;
+  }
+
+  .topbar-chip {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 65px;
+  }
+
+  .names-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .name-card.featured {
+    transform: none;
+  }
+
+  .tasbeeh-top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tasbeeh-top > div:first-child,
+  .target-wrap {
+    text-align: center;
+  }
+
+  .target-wrap select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .page {
+    width: min(100% - 20px, 1180px);
+  }
+
+  .section {
+    padding: 34px 0;
+  }
+
+  .hero {
+    padding: 56px 0 48px;
+  }
+
+  .hero h1 {
+    letter-spacing: -0.6px;
+  }
+
+  .hero-subtitle i {
+    padding: 0 3px;
+  }
+
+  .hero-dua {
+    font-size: 13px;
+  }
+
+  .name-card,
+  .verse-card,
+  .hadith-card,
+  .dua-item,
+  .tasbeeh-card {
+    border-radius: 22px;
+  }
+
+  .tasbeeh-card {
+    padding: 19px;
+  }
+
+  .counter-ring {
+    margin-top: 26px;
+  }
+
+  .hadith-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .dua-item {
+    gap: 10px;
+  }
+
+  blockquote p {
+    font-size: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="grid-overlay"></div>
+
+  <main class="page">
+    <nav class="topbar">
+      <div class="brand">
+        <span class="brand-mark">﴿</span>
+        <span>صدقة جارية</span>
+      </div>
+      <div class="topbar-chip">اللهم تقبّلها واجعل ثوابها نورًا لهم</div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-badge">
+        <span>✦</span>
+        عملٌ صالحٌ لا ينقطع أجره بإذن الله
+      </div>
+
+      <h1>صدقة جارية على روح</h1>
+      <p class="hero-subtitle">
+        <span>كامل شفيق</span>
+        <i>•</i>
+        <span>مريم عزيز</span>
+        <i>•</i>
+        <span>وحيد كامل</span>
+      </p>
+
+      <p class="hero-dua">
+        اللهم اغفر لهم وارحمهم وعافهم واعفُ عنهم، واجعل قبورهم روضةً من رياض الجنة،
+        ونوّر مرقدهم، وارفع درجاتهم، واجمعنا بهم في الفردوس الأعلى.
+      </p>
+
+      <a class="scroll-cta" href="#tasbeeh">
+        ابدأ الذكر
+        <span>↓</span>
+      </a>
+    </section>
+
+    <section class="names-section section">
+      <div class="section-heading">
+        <span class="eyebrow">ثلاثة أرواح • دعاء واحد</span>
+        <h2>اللهم اجعل هذه الصدقة نورًا لهم</h2>
+      </div>
+
+      <div class="names-grid">
+        <article class="name-card">
+          <div class="name-icon">ك</div>
+          <h3>كامل شفيق</h3>
+          <p>اللهم ارحمه رحمةً واسعة وأسكنه فسيح جناتك.</p>
+        </article>
+
+        <article class="name-card featured">
+          <div class="name-icon">م</div>
+          <h3>مريم عزيز</h3>
+          <p>اللهم اجعل قبرها نورًا ونعيمًا، وآنِس وحشتها.</p>
+        </article>
+
+        <article class="name-card">
+          <div class="name-icon">و</div>
+          <h3>وحيد كامل</h3>
+          <p>اللهم ارفع درجته في المهديين، واخلفه في عقبه بخير.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="verse-section section">
+      <div class="section-heading">
+        <span class="eyebrow">من القرآن الكريم</span>
+        <h2>آيات للرحمة والطمأنينة</h2>
+      </div>
+
+      <div class="verse-card">
+        <span class="verse-symbol">﴿</span>
+        <blockquote>
+          <p>﴿وَقُل رَّبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا﴾</p>
+        </blockquote>
+        <div class="reference">سورة الإسراء — الآية 24</div>
+      </div>
+
+      <div class="verse-card">
+        <span class="verse-symbol">﴿</span>
+        <blockquote>
+          <p>﴿وَالَّذِينَ جَاءُوا مِن بَعْدِهِمْ يَقُولُونَ رَبَّنَا اغْفِرْ لَنَا وَلِإِخْوَانِنَا الَّذِينَ سَبَقُونَا بِالْإِيمَانِ﴾</p>
+        </blockquote>
+        <div class="reference">سورة الحشر — الآية 10</div>
+      </div>
+    </section>
+
+    <section class="hadith-section section">
+      <div class="section-heading">
+        <span class="eyebrow">من السنة النبوية</span>
+        <h2>فضل الصدقة والدعاء</h2>
+      </div>
+
+      <div class="hadith-card">
+        <div class="hadith-icon">ﷺ</div>
+        <div>
+          <p class="hadith-text">
+            «إذا مات ابن آدم انقطع عمله إلا من ثلاث: صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له».
+          </p>
+          <p class="hadith-source">رواه مسلم</p>
+        </div>
+      </div>
+
+      <div class="hadith-card">
+        <div class="hadith-icon">۞</div>
+        <div>
+          <p class="hadith-text">
+            «من دل على خير فله مثل أجر فاعله».
+          </p>
+          <p class="hadith-source">رواه مسلم</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tasbeeh" class="tasbeeh-section section">
+      <div class="section-heading">
+        <span class="eyebrow">سبحة إلكترونية</span>
+        <h2>اذكر الله واهدِ ثواب الذكر لهم</h2>
+      </div>
+
+      <div class="tasbeeh-card">
+        <div class="tasbeeh-top">
+          <div>
+            <span class="small-label">الذكر الحالي</span>
+            <div id="dhikrText" class="dhikr-text">سُبْحَانَ الله</div>
+          </div>
+          <div class="target-wrap">
+            <label for="targetSelect">عدد التسبيحات</label>
+            <select id="targetSelect">
+              <option value="33">33</option>
+              <option value="66">66</option>
+              <option value="99">99</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="counter-ring" id="counterRing" aria-live="polite">
+          <div class="ring-inner">
+            <span class="remaining-label">المتبقي</span>
+            <strong id="count">33</strong>
+            <span class="remaining-label">ضغطة</span>
+          </div>
+        </div>
+
+        <button id="tasbeehButton" class="tasbeeh-button" type="button" aria-label="اضغط للتسبيح">
+          <span class="button-glow"></span>
+          <span class="button-inner">
+            <span class="finger">☝</span>
+            <span>اضغط للتسبيح</span>
+          </span>
+        </button>
+
+        <div class="tasbeeh-controls">
+          <button id="resetButton" class="secondary-btn" type="button">إعادة العداد</button>
+          <button id="nextDhikrButton" class="secondary-btn" type="button">تغيير الذكر</button>
+        </div>
+
+        <div class="completion-message" id="completionMessage" hidden>
+          <span>♥</span>
+          أحسنت، تقبّل الله منك، وجعل ثواب ذكرك رحمةً ونورًا لهم.
+        </div>
+      </div>
+    </section>
+
+    <section class="duas-section section">
+      <div class="section-heading">
+        <span class="eyebrow">دعاء من القلب</span>
+        <h2>لا تنسهم من صالح دعائك</h2>
+      </div>
+
+      <div class="dua-list">
+        <div class="dua-item">
+          <span class="dua-number">01</span>
+          <p>اللهم اغفر لهم وارحمهم، وعافهم واعفُ عنهم، وأكرم نزلهم ووسّع مدخلهم.</p>
+        </div>
+        <div class="dua-item">
+          <span class="dua-number">02</span>
+          <p>اللهم اجعل عن يمينهم نورًا وعن شمالهم نورًا ومن فوقهم نورًا ومن تحتهم نورًا.</p>
+        </div>
+        <div class="dua-item">
+          <span class="dua-number">03</span>
+          <p>اللهم اجزهم عن الإحسان إحسانًا، وعن التقصير عفوًا وغفرانًا، واربط على قلوب من فقدوهم.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-line"></div>
+      <p>﴿إِنَّ اللَّهَ مَعَ الصَّابِرِينَ﴾</p>
+      <span>اللهم اجعلها صدقةً جاريةً وسببًا للرحمة والمغفرة.</span>
+    </footer>
+  </main>
+
+  <script>
+const tasbeehButton = document.getElementById("tasbeehButton");
+const resetButton = document.getElementById("resetButton");
+const nextDhikrButton = document.getElementById("nextDhikrButton");
+const targetSelect = document.getElementById("targetSelect");
+const countEl = document.getElementById("count");
+const counterRing = document.getElementById("counterRing");
+const completionMessage = document.getElementById("completionMessage");
+const dhikrText = document.getElementById("dhikrText");
+
+const dhikrList = [
+  "سُبْحَانَ الله",
+  "الْحَمْدُ لله",
+  "اللهُ أَكْبَر",
+  "لَا إِلٰهَ إِلَّا الله",
+  "أَسْتَغْفِرُ الله"
+];
+
+let currentDhikrIndex = 0;
+let target = Number(targetSelect.value);
+let remaining = target;
+
+function updateRing() {
+  const completed = target - remaining;
+  const progress = target === 0 ? 1 : completed / target;
+  const degrees = Math.max(0, Math.min(360, progress * 360));
+
+  counterRing.style.background =
+    `conic-gradient(var(--gold) ${degrees}deg, rgba(255,255,255,0.07) ${degrees}deg)`;
+
+  countEl.textContent = remaining.toLocaleString("ar-EG");
+  dhikrText.textContent = dhikrList[currentDhikrIndex];
+
+  completionMessage.hidden = remaining !== 0;
+}
+
+function vibrate() {
+  if (navigator.vibrate) {
+    navigator.vibrate(18);
+  }
+}
+
+function tasbeeh() {
+  if (remaining <= 0) return;
+
+  remaining -= 1;
+  updateRing();
+  vibrate();
+
+  counterRing.classList.remove("pulse");
+  void counterRing.offsetWidth;
+  counterRing.classList.add("pulse");
+
+  if (remaining === 0) {
+    vibrate();
+  }
+}
+
+function resetCounter() {
+  remaining = target;
+  updateRing();
+}
+
+function changeDhikr() {
+  currentDhikrIndex = (currentDhikrIndex + 1) % dhikrList.length;
+  updateRing();
+}
+
+tasbeehButton.addEventListener("click", tasbeeh);
+resetButton.addEventListener("click", resetCounter);
+nextDhikrButton.addEventListener("click", changeDhikr);
+
+targetSelect.addEventListener("change", () => {
+  target = Number(targetSelect.value);
+  remaining = target;
+  updateRing();
+});
+
+// Keyboard accessibility: Space / Enter trigger the tasbeeh button normally.
+document.addEventListener("keydown", (event) => {
+  if (event.target === tasbeehButton || event.target === targetSelect) return;
+
+  if (event.code === "Space" || event.code === "Enter") {
+    tasbeehButton.focus();
+  }
+});
+
+updateRing();
+
+</script>
+</body>
+</html>
